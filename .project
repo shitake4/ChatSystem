@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>ChatSystem</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+<<<<<<< HEAD
+		<buildCommand>
+			<name>net.sf.eclipsecs.core.CheckstyleBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+=======
+>>>>>>> 7e2b1ad7c15112fff7deac8dcc727b49b88e35bd
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+		<nature>com.sysdeo.eclipse.tomcat.tomcatnature</nature>
+		<nature>net.sf.eclipse.tomcat.tomcatnature</nature>
+<<<<<<< HEAD
+		<nature>net.sf.eclipsecs.core.CheckstyleNature</nature>
+=======
+>>>>>>> 7e2b1ad7c15112fff7deac8dcc727b49b88e35bd
+	</natures>
+</projectDescription>
