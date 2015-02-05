@@ -99,6 +99,7 @@ public class MainController extends HttpServlet{
 			if(session.getAttribute("error") == null){
 				String returnUrl = controller.remove(req, object);
 				if(returnUrl != null){
+				  
 					url = returnUrl;
 				}
 			}
