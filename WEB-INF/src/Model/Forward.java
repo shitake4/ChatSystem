@@ -12,33 +12,36 @@ import org.slf4j.LoggerFactory;
 
 public class Forward {
 
-	private static Logger logger = LoggerFactory.getLogger(Forward.class.getName());
+  private static Logger logger = LoggerFactory.getLogger(Forward.class
+      .getName());
 
-	public void transiton(String url,HttpServletRequest req,HttpServletResponse resp){
-		
-		if(!(url == null || url.equals(""))){
-			RequestDispatcher dispatcher = req.getServletContext().getRequestDispatcher(url);
-			try {
-				dispatcher.forward(req, resp);
-			} catch (ServletException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-				logger.debug("遷移エラー", e);
-				
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-				logger.debug("遷移エラー", e);
-			}
-		}else{
-			try {
-				resp.sendRedirect("/error.jsp");
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-				logger.debug("遷移エラー", e);
-			}
-		}
+  public void transiton(String url, HttpServletRequest req,
+      HttpServletResponse resp) {
 
-	}
+    if (!(url == null || url.equals(""))) {
+      RequestDispatcher dispatcher = req.getServletContext()
+          .getRequestDispatcher(url);
+      try {
+        dispatcher.forward(req, resp);
+      } catch (ServletException e) {
+        // TODO Auto-generated catch block
+        e.printStackTrace();
+        logger.debug("遷移エラー", e);
+
+      } catch (IOException e) {
+        // TODO Auto-generated catch block
+        e.printStackTrace();
+        logger.debug("遷移エラー", e);
+      }
+    } else {
+      try {
+        resp.sendRedirect("/error.jsp");
+      } catch (IOException e) {
+        // TODO Auto-generated catch block
+        e.printStackTrace();
+        logger.debug("遷移エラー", e);
+      }
+    }
+
+  }
 }
